@@ -15,10 +15,11 @@ This project analyzes online retail sales data to identify revenue trends, top-p
 ## Data Source
 
 - **Dataset:** Online Retail II UCI Dataset
-- **Source:** Kaggle
+- **Source:** [Kaggle - Online Retail II UCI] (https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci)
 - **Size:** 1,048,576 transactions
-- **Time Period:** [Insert date range from your data - e.g., Jan 2009 - Dec 2011]
+- **Time Period:** Dec 2009 - Nov 2011]
 - **Geography:** Multi-country e-commerce data
+
 
 ## Data Columns
 
@@ -63,11 +64,9 @@ This project analyzes online retail sales data to identify revenue trends, top-p
 
 ## Key Findings
 
-[Add 2-3 findings from your dashboard, such as:]
-- Example: "Revenue peaked in [Month/Season] with $X in sales"
-- Example: "The top product generated $X in revenue, accounting for X% of total sales"
-- Example: "[Country] is the strongest market with $X in revenue, followed by [Country]"
-- Example: "Monthly revenue ranges from $X to $X, with an average of $X"
+- Revenue peaked in Nov 2010 with $1,422,655 in sales, and then again in Nov 2011 with $1,461,756
+- The United Kingdom is the strongest market with $16,,105,600 in revenue, followed by Éire with $609,218
+- There is a huge decline in Dec 2011 due to the lack of information in the data provided
 
 ## Data Preparation Process
 
@@ -98,23 +97,20 @@ This project analyzes online retail sales data to identify revenue trends, top-p
 ```
 ecommerce-sales-project/
 ├── README.md                                    # This file
-├── ecommerce_sales.csv                          # Dataset with calculated columns
 ├── Ecommerce_Sales_Dashboard.twbx               # Tableau workbook (interactive)
 └── ecommerce_sales_dashboard.png                # Dashboard screenshot
 ```
 
 ## How to Reproduce
 
-1. Download `ecommerce_sales.csv`
-2. Open Tableau Public
-3. Connect to the CSV file
-4. Create three sheets:
-   - Revenue over time (line/bar chart by Month)
-   - Top 10 products by revenue (bar chart)
-   - Top 10 countries by revenue (bar chart)
-5. Combine into a single dashboard
-6. Add title, format, and style as desired
-7. Add data labels to bar charts for clarity
+1. Download the dataset from the Kaggle link above
+2. Open the CSV in Excel
+3. Add two calculated columns:
+   - **Revenue (Column I):** `=Quantity × Price`
+   - **Month (Column J):** `=TEXT(InvoiceDate,"YYYY-MM")`
+4. Save as CSV
+5. Open `Ecommerce_Sales_Dashboard.twbx` in Tableau and connect to your CSV
+6. Explore the interactive dashboard
 
 ## Insights & Recommendations
 
@@ -143,13 +139,14 @@ Based on the dashboard analysis:
 
 ## Author
 
-[Your Name]  
+Erika Carr 
 Data Analysis Portfolio Project  
 March 2026
 
 ## Contact
 
-[Your Email/LinkedIn]
+rikicarr10@gmail.com
+www.linkedin.com/in/erika-carr-6460161a
 
 ---
 
